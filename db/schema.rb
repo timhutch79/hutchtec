@@ -10,7 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_31_235031) do
+ActiveRecord::Schema.define(version: 2019_01_01_060633) do
+
+  create_table "people", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "firstname"
+    t.string "lastname"
+    t.string "personalemail"
+    t.string "workemail"
+    t.string "mobile"
+    t.string "homephone"
+    t.string "address1"
+    t.string "address2"
+    t.string "city"
+    t.string "postcode"
+    t.string "state"
+    t.string "country"
+    t.date "dateofbirth"
+    t.string "gender"
+    t.string "department"
+    t.string "office"
+    t.string "reports"
+    t.string "position"
+    t.string "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_people_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
