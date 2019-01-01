@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'hr' => 'pages#hr'
   get 'it' => 'pages#it'
   get 'ohs' => 'pages#ohs'
-  get 'newuserform' => 'pages#newuserform'
+  get 'newuserform' => 'pages#newuserform.html.erb'
  
 
 
