@@ -1,19 +1,15 @@
 Rails.application.routes.draw do
   resources :people
-
-
-
-
+  ActiveAdmin.routes(self)
   devise_for :users
-  root 'pages#home'
-  get 'hr' => 'pages#hr'
-  get 'it' => 'pages#it'
-  get 'ohs' => 'pages#ohs'
-  get 'newuser' => 'pages#newuser'
-  get 'dashboard' => 'pages#dashboard.html.erb'
-  get 'form' => 'pages#form'
-  get 'people' => 'pages#people'
-
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  as :user do 
+  		get "signin" => 'devise/sessions#new'
+  		delete "signout" => 'devise/sessions#destroy'
+  		get "signup" => 'devise/registrations#new'
+  	end
+	root 'pages#home'
+	get 'about' => 'pages#about'
+	get 'contactus' => 'pages#contactus'
+  get 'profile' => 'pages#profile'
+   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

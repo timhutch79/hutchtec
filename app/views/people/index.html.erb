@@ -8,23 +8,43 @@
       <th>User</th>
       <th>Firstname</th>
       <th>Lastname</th>
+      <th>Perferedname</th>
+      <th>Dateofbirth</th>
+      <th>Gender</th>
       <th>Personalemail</th>
       <th>Workemail</th>
       <th>Mobile</th>
       <th>Homephone</th>
+      <th>Workphone</th>
       <th>Address1</th>
       <th>Address2</th>
       <th>City</th>
       <th>Postcode</th>
       <th>State</th>
       <th>Country</th>
-      <th>Dateofbirth</th>
-      <th>Gender</th>
       <th>Department</th>
       <th>Office</th>
-      <th>Reports</th>
-      <th>Position</th>
-      <th>Title</th>
+      <th>Reportsto</th>
+      <th>Positiontitle</th>
+      <th>Startdate</th>
+      <th>Finsihdate</th>
+      <th>Customtext1</th>
+      <th>Customtext2</th>
+      <th>Customtext3</th>
+      <th>Customtext4</th>
+      <th>Customtext5</th>
+      <th>Customtext6</th>
+      <th>Customtext7</th>
+      <th>Customtext8</th>
+      <th>Customtext9</th>
+      <th>Customtext10</th>
+      <th>Customtext11</th>
+      <th>Customtext12</th>
+      <th>Customdate1</th>
+      <th>Customdate2</th>
+      <th>Customdate3</th>
+      <th>Customdate4</th>
+      <th>Customdate5</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -35,23 +55,43 @@
         <td><%= person.user %></td>
         <td><%= person.firstname %></td>
         <td><%= person.lastname %></td>
+        <td><%= person.perferedname %></td>
+        <td><%= person.dateofbirth %></td>
+        <td><%= person.gender %></td>
         <td><%= person.personalemail %></td>
         <td><%= person.workemail %></td>
         <td><%= person.mobile %></td>
         <td><%= person.homephone %></td>
+        <td><%= person.workphone %></td>
         <td><%= person.address1 %></td>
         <td><%= person.address2 %></td>
         <td><%= person.city %></td>
         <td><%= person.postcode %></td>
         <td><%= person.state %></td>
         <td><%= person.country %></td>
-        <td><%= person.dateofbirth %></td>
-        <td><%= person.gender %></td>
         <td><%= person.department %></td>
         <td><%= person.office %></td>
-        <td><%= person.reports %></td>
-        <td><%= person.position %></td>
-        <td><%= person.title %></td>
+        <td><%= person.reportsto %></td>
+        <td><%= person.positiontitle %></td>
+        <td><%= person.startdate %></td>
+        <td><%= person.finsihdate %></td>
+        <td><%= person.customtext1 %></td>
+        <td><%= person.customtext2 %></td>
+        <td><%= person.customtext3 %></td>
+        <td><%= person.customtext4 %></td>
+        <td><%= person.customtext5 %></td>
+        <td><%= person.customtext6 %></td>
+        <td><%= person.customtext7 %></td>
+        <td><%= person.customtext8 %></td>
+        <td><%= person.customtext9 %></td>
+        <td><%= person.customtext10 %></td>
+        <td><%= person.customtext11 %></td>
+        <td><%= person.customtext12 %></td>
+        <td><%= person.customdate1 %></td>
+        <td><%= person.customdate2 %></td>
+        <td><%= person.customdate3 %></td>
+        <td><%= person.customdate4 %></td>
+        <td><%= person.customdate5 %></td>
         <td><%= link_to 'Show', person %></td>
         <td><%= link_to 'Edit', edit_person_path(person) %></td>
         <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -10,36 +10,63 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_02_041123) do
+ActiveRecord::Schema.define(version: 2019_01_02_224251) do
 
-  create_table "events", force: :cascade do |t|
-    t.string "name"
-    t.datetime "start_time"
+  create_table "active_admin_comments", force: :cascade do |t|
+    t.string "namespace"
+    t.text "body"
+    t.string "resource_type"
+    t.integer "resource_id"
+    t.string "author_type"
+    t.integer "author_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id"
+    t.index ["namespace"], name: "index_active_admin_comments_on_namespace"
+    t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
   end
 
   create_table "people", force: :cascade do |t|
     t.integer "user_id"
     t.string "firstname"
     t.string "lastname"
+    t.string "perferedname"
+    t.date "dateofbirth"
+    t.string "gender"
     t.string "personalemail"
     t.string "workemail"
     t.string "mobile"
     t.string "homephone"
+    t.string "workphone"
     t.string "address1"
     t.string "address2"
     t.string "city"
     t.string "postcode"
     t.string "state"
     t.string "country"
-    t.date "dateofbirth"
-    t.string "gender"
     t.string "department"
     t.string "office"
-    t.string "reports"
-    t.string "position"
-    t.string "title"
+    t.string "reportsto"
+    t.string "positiontitle"
+    t.date "startdate"
+    t.date "finsihdate"
+    t.string "customtext1"
+    t.string "customtext2"
+    t.string "customtext3"
+    t.string "customtext4"
+    t.string "customtext5"
+    t.string "customtext6"
+    t.string "customtext7"
+    t.string "customtext8"
+    t.string "customtext9"
+    t.string "customtext10"
+    t.string "customtext11"
+    t.string "customtext12"
+    t.date "customdate1"
+    t.date "customdate2"
+    t.date "customdate3"
+    t.date "customdate4"
+    t.date "customdate5"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_people_on_user_id"
@@ -53,6 +80,7 @@ ActiveRecord::Schema.define(version: 2019_01_02_041123) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "admin", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

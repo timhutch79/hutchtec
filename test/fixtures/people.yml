@@ -4,42 +4,82 @@ one:
   user: one
   firstname: MyString
   lastname: MyString
+  perferedname: MyString
+  dateofbirth: 2019-01-03
+  gender: MyString
   personalemail: MyString
   workemail: MyString
   mobile: MyString
   homephone: MyString
+  workphone: MyString
   address1: MyString
   address2: MyString
   city: MyString
   postcode: MyString
   state: MyString
   country: MyString
-  dateofbirth: 2019-01-01
-  gender: MyString
   department: MyString
   office: MyString
-  reports: MyString
-  position: MyString
-  title: MyString
+  reportsto: MyString
+  positiontitle: MyString
+  startdate: 2019-01-03
+  finsihdate: 2019-01-03
+  customtext1: MyString
+  customtext2: MyString
+  customtext3: MyString
+  customtext4: MyString
+  customtext5: MyString
+  customtext6: MyString
+  customtext7: MyString
+  customtext8: MyString
+  customtext9: MyString
+  customtext10: MyString
+  customtext11: MyString
+  customtext12: MyString
+  customdate1: 2019-01-03
+  customdate2: 2019-01-03
+  customdate3: 2019-01-03
+  customdate4: 2019-01-03
+  customdate5: 2019-01-03
 
 two:
   user: two
   firstname: MyString
   lastname: MyString
+  perferedname: MyString
+  dateofbirth: 2019-01-03
+  gender: MyString
   personalemail: MyString
   workemail: MyString
   mobile: MyString
   homephone: MyString
+  workphone: MyString
   address1: MyString
   address2: MyString
   city: MyString
   postcode: MyString
   state: MyString
   country: MyString
-  dateofbirth: 2019-01-01
-  gender: MyString
   department: MyString
   office: MyString
-  reports: MyString
-  position: MyString
-  title: MyString
+  reportsto: MyString
+  positiontitle: MyString
+  startdate: 2019-01-03
+  finsihdate: 2019-01-03
+  customtext1: MyString
+  customtext2: MyString
+  customtext3: MyString
+  customtext4: MyString
+  customtext5: MyString
+  customtext6: MyString
+  customtext7: MyString
+  customtext8: MyString
+  customtext9: MyString
+  customtext10: MyString
+  customtext11: MyString
+  customtext12: MyString
+  customdate1: 2019-01-03
+  customdate2: 2019-01-03
+  customdate3: 2019-01-03
+  customdate4: 2019-01-03
+  customdate5: 2019-01-03
