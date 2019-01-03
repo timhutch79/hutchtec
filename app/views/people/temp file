@@ -1,0 +1,7 @@
+temp file 
+
+line 14 people/_form
+<div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
