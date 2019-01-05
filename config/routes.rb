@@ -15,5 +15,7 @@ Rails.application.routes.draw do
 	get 'contactus' => 'pages#contactus'
   get 'profile' => 'pages#profile'
   get 'show' => 'people#id'
+  
+
    # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
